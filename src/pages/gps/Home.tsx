@@ -114,8 +114,8 @@ const GPSHome = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEO 
-        title="Packaging Supplies in Kumasi"
-        description="GhanaPack Packaging Solutions supplies food packs, paper bags, bottles, jars, disposables, and custom branded packaging for restaurants, startups, events, weddings, and funerals in Kumasi and across Ghana."
+        title="GhanaPack Packaging Solutions"
+        description="GhanaPack Packaging Solutions supplies affordable food packs, paper bags, bottles, jars, disposables, and custom branded packaging in Kumasi with delivery across Ghana."
         canonical="/"
         ogImage="/images/IMG_0502.jpeg"
         ogImageAlt="Wide display of custom GhanaPack paper bags and branded packaging samples"

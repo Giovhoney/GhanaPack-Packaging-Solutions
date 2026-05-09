@@ -1,0 +1,24 @@
+{
+  "name": "GhanaPack Packaging Solutions",
+  "short_name": "GhanaPack",
+  "description": "Affordable packaging supplies in Kumasi with delivery across Ghana.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff5a00",
+  "icons": [
+    {
+      "src": "/favicon.png?v=2",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/logo1-transparent-cropped.png",
+      "sizes": "745x843",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

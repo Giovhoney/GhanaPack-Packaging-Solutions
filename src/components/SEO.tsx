@@ -26,11 +26,14 @@ const SEO = ({ title, description, canonical, ogType = 'website', ogImage = DEFA
   const imageAlt = ogImageAlt || 'GhanaPack Packaging Solutions packaging products and custom paper bags in Ghana';
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': ['LocalBusiness', 'Organization'],
     '@id': `${SITE_URL}/#business`,
     name: siteName,
+    legalName: siteName,
+    alternateName: 'GhanaPack',
     url: SITE_URL,
     image: imageUrl,
+    thumbnailUrl: imageUrl,
     logo: absoluteUrl('/images/logo1-transparent-cropped.png'),
     description,
     telephone: '+233540645292',
@@ -69,6 +72,7 @@ const SEO = ({ title, description, canonical, ogType = 'website', ogImage = DEFA
       <meta property="og:image:alt" content={imageAlt} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
+      <meta property="og:logo" content={absoluteUrl('/images/logo1-transparent-cropped.png')} />
 
       {/* Twitter tags */}
       <meta name="twitter:card" content="summary_large_image" />
