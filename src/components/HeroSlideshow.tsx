@@ -50,7 +50,7 @@ export const HeroSlideshow = ({
           <img
             src={img}
             alt=""
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover pointer-events-none"
             style={{ 
               opacity: opacity,
               filter: grayscale ? 'grayscale(100%)' : 'none',
@@ -123,7 +123,7 @@ export const HeroSlideshow = ({
       ))}
       {/* Minimal overlay for text contrast */}
       <div 
-        className="absolute inset-0" 
+        className="absolute inset-0 pointer-events-none" 
         style={{ 
           background: `linear-gradient(to bottom, ${overlayColor}, rgba(255,255,255,0.2))`,
           zIndex: 2 
