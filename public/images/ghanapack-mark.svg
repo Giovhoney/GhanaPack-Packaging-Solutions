@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Ghanapack Packaging Solutions mark</title>
+  <desc id="desc">A geometric G-shaped packaging mark with an orange parcel cube.</desc>
+  <defs>
+    <linearGradient id="orange" x1="38" y1="36" x2="86" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff8a2a"/>
+      <stop offset="1" stop-color="#ff5f00"/>
+    </linearGradient>
+  </defs>
+  <path fill="#0A0A0A" d="M64 6.5c4.4 0 8.7 1.2 12.5 3.4l34.1 19.7c7.7 4.4 12.4 12.7 12.4 21.5v6.7H99V51c0-.3-.2-.6-.5-.8L65 30.8c-.6-.3-1.3-.3-1.9 0L29.5 50.2c-.3.2-.5.5-.5.8v38.8c0 .3.2.7.5.8L63 110c.6.3 1.3.3 1.9 0L99 90.3V79.2L76 92.5V68.2l35.6-20.6c2.4-1.4 5.4.4 5.4 3.1v47.1c0 4.3-2.3 8.3-6 10.4L76.5 128c-7.7 4.4-17.3 4.4-25 0L17.4 108.3C9.7 103.8 5 95.6 5 86.7V51.3c0-8.9 4.7-17.1 12.4-21.5L51.5 9.9C55.3 7.7 59.6 6.5 64 6.5Z"/>
+  <path fill="url(#orange)" d="M64 42 86.2 54.8 64 67.6 41.8 54.8 64 42Zm-24 23.8 20.7 11.9v29.2L40 94.9V65.8Zm48 0v29.1l-20.7 12V77.7L88 65.8Z"/>
+</svg>

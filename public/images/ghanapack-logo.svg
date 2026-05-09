@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-labelledby="title desc">
+  <title id="title">Ghanapack Packaging Solutions logo</title>
+  <desc id="desc">Ghanapack Packaging Solutions wordmark with a black packaging mark and orange parcel cube.</desc>
+  <defs>
+    <linearGradient id="orange" x1="30" y1="30" x2="76" y2="86" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff8a2a"/>
+      <stop offset="1" stop-color="#ff5f00"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path fill="#0A0A0A" d="M56 8c4 0 8 1.1 11.5 3.1l32 18.5c7.1 4.1 11.5 11.7 11.5 20v5.9H89V49c0-.3-.1-.5-.4-.7L57 30c-.6-.3-1.2-.3-1.8 0L23.6 48.3c-.3.2-.4.4-.4.7v36.6c0 .3.1.5.4.7L55.2 105c.6.3 1.2.3 1.8 0L89 86.6V77L67.8 89.2V66.9l33.5-19.3c2.2-1.3 4.9.3 4.9 2.8v44.1c0 4-2.1 7.7-5.5 9.7L68 122.9c-7.1 4.1-15.9 4.1-23 0L13.5 104.4C6.4 100.3 2 92.7 2 84.4V51.6c0-8.3 4.4-15.9 11.5-20L45 11.1C48.1 9.1 52 8 56 8Z"/>
+    <path fill="url(#orange)" d="M56 41.8 77 54 56 66.1 35 54 56 41.8Zm-22.8 23 19.6 11.3v27.5L33.2 92.4V64.8Zm45.6 0v27.6l-19.6 11.2V76.1l19.6-11.3Z"/>
+  </g>
+  <g fill="#0A0A0A" font-family="Inter, Arial, Helvetica, sans-serif" font-weight="900" letter-spacing="3">
+    <text x="136" y="50" font-size="36">GHANAPACK</text>
+    <text x="136" y="88" font-size="27">PACKAGING <tspan fill="#FF5F00">SOLUTIONS</tspan></text>
+  </g>
+</svg>

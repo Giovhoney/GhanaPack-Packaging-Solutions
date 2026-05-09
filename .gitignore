@@ -1,0 +1,9 @@
+node_modules/
+dist/
+_dist_/
+.DS_Store
+*.log
+*.png
+!public/favicon.png
+!public/images/*.png
+!public/images/*.jpeg

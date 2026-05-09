@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-gps-orange: #FF5F00;
+  --color-gps-black: #0A0A0A;
+  --color-gps-gray: #F5F5F5;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gps-black antialiased selection:bg-gps-orange selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-black tracking-tighter uppercase leading-none;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-24 md:py-32 px-6;
+  }
+
+  .btn-primary {
+    @apply bg-gps-orange text-white px-10 py-5 font-black uppercase tracking-widest hover:bg-gps-black transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0 shadow-lg hover:shadow-gps-orange/20;
+  }
+
+  .btn-outline {
+    @apply border-2 border-gps-black px-10 py-5 font-black uppercase tracking-widest hover:bg-gps-black hover:text-white transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gps-orange to-orange-400;
+  }
+
+  .card-hover {
+    @apply transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-black/5;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gps-gray;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gps-black rounded-full border-4 border-gps-gray;
+}
+
+/* 3D Canvas Container */
+.canvas-container {
+  @apply w-full h-full min-h-[400px] cursor-grab active:cursor-grabbing;
+}
