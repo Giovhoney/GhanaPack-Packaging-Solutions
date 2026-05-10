@@ -5,5 +5,7 @@ _dist_/
 *.log
 *.png
 !public/favicon.png
+!public/favicon-48.png
+!public/favicon-192.png
 !public/images/*.png
 !public/images/*.jpeg
