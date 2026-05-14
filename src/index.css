@@ -8,6 +8,14 @@
 }
 
 @layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-white text-gps-black antialiased selection:bg-gps-orange selection:text-white;
   }

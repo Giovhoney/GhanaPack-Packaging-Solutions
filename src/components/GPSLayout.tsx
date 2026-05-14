@@ -37,16 +37,16 @@ export const GPSHeader = () => {
       <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled ? 'bg-white/90 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'
       }`}>
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3" aria-label="GhanaPack Packaging Solutions home">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
+          <Link to="/" className="flex min-w-0 items-center gap-2.5 sm:gap-3" aria-label="GhanaPack Packaging Solutions home">
             <img
               src="/images/logo1-transparent-cropped.png"
               alt=""
-              className="h-12 w-auto md:h-14"
+              className="h-10 w-auto shrink-0 sm:h-12 md:h-14"
             />
-            <span className="leading-none">
-              <span className="block text-lg md:text-xl font-black uppercase tracking-widest text-gps-black">GhanaPack</span>
-              <span className="block text-[9px] md:text-[10px] font-black uppercase tracking-[0.22em] text-gps-orange">Packaging Solutions</span>
+            <span className="min-w-0 leading-none">
+              <span className="block text-base sm:text-lg md:text-xl font-black uppercase tracking-[0.16em] sm:tracking-widest text-gps-black">GhanaPack</span>
+              <span className="block text-[8px] sm:text-[9px] md:text-[10px] font-black uppercase tracking-[0.14em] sm:tracking-[0.22em] text-gps-orange">Packaging Solutions</span>
             </span>
           </Link>
 
@@ -74,7 +74,7 @@ export const GPSHeader = () => {
           </nav>
 
           {/* Mobile Toggle */}
-          <button className="lg:hidden text-gps-black" onClick={() => setIsOpen(!isOpen)}>
+          <button className="lg:hidden shrink-0 text-gps-black" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
@@ -119,39 +119,39 @@ const ArrowRight = ({ size }: { size: number }) => (
 );
 
 export const GPSFooter = () => (
-  <footer className="bg-gps-black text-white pt-32 pb-12 px-6">
-    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
-      <div className="space-y-8">
-        <Link to="/" className="inline-flex flex-col items-start gap-5" aria-label="GhanaPack Packaging Solutions home">
+  <footer className="bg-gps-black text-white pt-20 pb-8 px-6">
+    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.25fr_1fr_0.85fr_1.05fr] gap-10 lg:gap-14 mb-14">
+      <div className="space-y-6">
+        <a href="/" className="inline-flex items-center gap-4" aria-label="GhanaPack Packaging Solutions home">
           <img
             src="/images/logo1-transparent-cropped.png"
             alt=""
-            className="h-28 w-auto md:h-36"
+            className="h-16 w-auto md:h-20"
           />
           <span className="leading-none">
-            <span className="block text-3xl md:text-4xl font-black uppercase tracking-tight text-white">GhanaPack</span>
-            <span className="block mt-2 text-xs md:text-sm font-black uppercase tracking-[0.22em] text-gps-orange">Packaging Solutions</span>
+            <span className="block text-2xl font-black uppercase tracking-tight text-white">GhanaPack</span>
+            <span className="block mt-2 text-[10px] md:text-xs font-black uppercase tracking-[0.22em] text-gps-orange">Packaging Solutions</span>
           </span>
-        </Link>
-        <p className="text-gray-400 leading-relaxed">
+        </a>
+        <p className="max-w-sm text-sm text-gray-400 leading-relaxed">
           The leading provider of affordable, professional packaging solutions in Kumasi and across Ghana. We help your products stand out.
         </p>
-        <div className="flex gap-4">
+        <div className="flex gap-3">
           {[Instagram, Facebook, Twitter].map((Icon, i) => (
             <a 
               key={i} 
               href="#" 
-              className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-gps-orange hover:border-gps-orange transition-all"
+              className="w-9 h-9 border border-white/10 flex items-center justify-center hover:bg-gps-orange hover:border-gps-orange transition-all"
             >
-              <Icon size={18} />
+              <Icon size={16} />
             </a>
           ))}
         </div>
       </div>
       
       <div>
-        <h4 className="text-xs font-black uppercase tracking-[0.3em] text-gps-orange mb-10">Payment & Delivery</h4>
-        <div className="space-y-6">
+        <h4 className="text-xs font-black uppercase tracking-[0.3em] text-gps-orange mb-7">Payment & Delivery</h4>
+        <div className="space-y-5">
           <div>
             <p className="text-[10px] font-black uppercase tracking-widest text-gray-500 mb-2">Payment Methods</p>
             <p className="text-sm text-gray-300 font-bold">MTN MoMo, Telecel Cash, Bank Transfer</p>
@@ -164,8 +164,8 @@ export const GPSFooter = () => (
       </div>
 
       <div>
-        <h4 className="text-xs font-black uppercase tracking-[0.3em] text-gps-orange mb-10">Quick Links</h4>
-        <ul className="space-y-4 text-sm font-bold uppercase tracking-widest">
+        <h4 className="text-xs font-black uppercase tracking-[0.3em] text-gps-orange mb-7">Quick Links</h4>
+        <ul className="space-y-3 text-sm font-bold uppercase tracking-widest">
           <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
           <li><Link to="/products" className="text-gray-400 hover:text-white transition-colors">Products</Link></li>
           <li><Link to="/custom-packaging" className="text-gray-400 hover:text-white transition-colors">Custom Packaging</Link></li>
@@ -174,8 +174,8 @@ export const GPSFooter = () => (
       </div>
 
       <div>
-        <h4 className="text-xs font-black uppercase tracking-[0.3em] text-gps-orange mb-10">Contact</h4>
-        <ul className="space-y-6 text-gray-400">
+        <h4 className="text-xs font-black uppercase tracking-[0.3em] text-gps-orange mb-7">Contact</h4>
+        <ul className="space-y-5 text-gray-400">
           <li className="flex items-start gap-4">
             <Phone className="text-gps-orange shrink-0" size={20} />
             <span className="font-bold">+233 540645292</span>
@@ -192,7 +192,7 @@ export const GPSFooter = () => (
       </div>
     </div>
     
-    <div className="max-w-7xl mx-auto pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+    <div className="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-5">
       <p className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500">
         © {new Date().getFullYear()} GhanaPack Packaging Solutions. All Rights Reserved.
       </p>

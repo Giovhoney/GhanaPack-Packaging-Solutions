@@ -195,7 +195,7 @@ const ProductCard = ({ item }: { item: ProductItem }) => {
   };
 
   return (
-    <div className="group card-hover bg-white border border-gps-black/5 p-2 md:p-4 h-full flex flex-col">
+    <div className="group card-hover w-full min-w-0 bg-white border border-gps-black/5 p-2 md:p-4 h-full flex flex-col">
       <div className="aspect-square overflow-hidden bg-gps-gray mb-4 md:mb-8 relative">
         <div
           ref={galleryRef}
@@ -215,7 +215,7 @@ const ProductCard = ({ item }: { item: ProductItem }) => {
           ))}
         </div>
 
-        <div className="absolute top-2 right-2 md:top-4 md:right-4 bg-gps-orange text-white px-2 py-1 md:px-4 md:py-2 text-[8px] md:text-[10px] font-black uppercase tracking-widest shadow-lg">
+        <div className="absolute top-2 right-2 md:top-4 md:right-4 bg-gps-orange text-white px-2 py-1 md:px-4 md:py-2 text-[8px] md:text-[10px] font-black uppercase tracking-[0.14em] md:tracking-widest shadow-lg">
           {item.price}
         </div>
 
@@ -370,7 +370,7 @@ const GPSProducts = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-12">
                   {filteredItems.map((item, itemIdx) => (
-                    <Reveal key={item.name} delay={0.1 * itemIdx + catIdx * 0.03}>
+                    <Reveal key={item.name} delay={0.1 * itemIdx + catIdx * 0.03} width="100%">
                       <ProductCard item={item} />
                     </Reveal>
                   ))}
