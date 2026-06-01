@@ -4,11 +4,10 @@ _dist_/
 .DS_Store
 *.log
 *.png
+*.ico
+!public/favicon.ico
 !public/favicon.png
 !public/favicon-48.png
 !public/favicon-192.png
-!public/ghanapack-favicon-20260514-48.png
-!public/ghanapack-favicon-20260514-128.png
-!public/ghanapack-favicon-20260514-192.png
 !public/images/*.png
 !public/images/*.jpeg
