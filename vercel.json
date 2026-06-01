@@ -1,15 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/products",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/custom-packaging",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/contact",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ],

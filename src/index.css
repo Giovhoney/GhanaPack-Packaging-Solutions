@@ -5,6 +5,13 @@
   --color-gps-orange: #FF5F00;
   --color-gps-black: #0A0A0A;
   --color-gps-gray: #F5F5F5;
+  --color-brand: #FF5F00;
+  --color-brand-dark: #D94F00;
+  --color-accent: #111827;
+  --color-yellow: #FFC247;
+  --color-ink: #0A0A0A;
+  --color-warm: #F7F7FB;
+  --shadow-soft: 0 24px 80px rgba(17, 24, 39, 0.12);
 }
 
 @layer base {
@@ -17,11 +24,11 @@
   }
 
   body {
-    @apply bg-white text-gps-black antialiased selection:bg-gps-orange selection:text-white;
+    @apply bg-white text-ink antialiased selection:bg-brand selection:text-white;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-black tracking-tighter uppercase leading-none;
+    @apply font-black leading-tight;
   }
 }
 
@@ -62,11 +69,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-gps-gray;
+  @apply bg-warm;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gps-black rounded-full border-4 border-gps-gray;
+  @apply bg-ink rounded-full border-4 border-warm;
 }
 
 /* 3D Canvas Container */

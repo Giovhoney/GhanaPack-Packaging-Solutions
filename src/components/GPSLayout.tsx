@@ -82,28 +82,54 @@ export const GPSHeader = () => {
 
       {/* Mobile Nav - Moved outside header to avoid clipping/stacking issues */}
       {isOpen && (
-        <div className="fixed inset-0 bg-white z-[100] flex flex-col items-center justify-center p-6 overflow-y-auto animate-in fade-in zoom-in duration-300">
-          <button className="absolute top-6 right-6 text-gps-black" onClick={() => setIsOpen(false)}>
-            <X size={32} />
-          </button>
-          <div className="flex flex-col items-center space-y-8 my-auto">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={() => setIsOpen(false)}
-                className="text-4xl font-black uppercase tracking-tighter hover:text-gps-orange transition-colors text-center"
-              >
-                {link.name}
-              </Link>
-            ))}
+        <div className="fixed inset-0 z-[100] overflow-y-auto bg-white px-4 py-5 animate-in fade-in duration-300">
+          <div className="flex items-center justify-between">
+            <Link to="/" onClick={() => setIsOpen(false)} className="flex min-w-0 items-center gap-2.5" aria-label="GhanaPack Packaging Solutions home">
+              <img
+                src="/images/logo1-transparent-cropped.png"
+                alt=""
+                className="h-10 w-auto shrink-0"
+              />
+              <span className="min-w-0 leading-none">
+                <span className="block text-base font-black uppercase tracking-[0.16em] text-gps-black">GhanaPack</span>
+                <span className="block text-[8px] font-black uppercase tracking-[0.14em] text-gps-orange">Packaging Solutions</span>
+              </span>
+            </Link>
+            <button className="rounded-full border border-gray-200 p-2.5 text-gps-black" onClick={() => setIsOpen(false)} aria-label="Close menu">
+              <X size={20} />
+            </button>
+          </div>
+          <div className="mt-10 grid gap-7">
+            <nav className="grid gap-2.5">
+              {navLinks.map((link) => {
+                const isActive = location.pathname === link.path;
+
+                return (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    onClick={() => setIsOpen(false)}
+                    aria-current={isActive ? 'page' : undefined}
+                    className={`group flex min-h-14 items-center gap-3 rounded-full px-4 text-left text-[15px] font-black uppercase tracking-[0.16em] transition-all ${
+                      isActive
+                        ? 'bg-gps-orange/10 text-gps-orange'
+                        : 'text-gps-black hover:bg-gray-100 hover:text-gps-orange'
+                    }`}
+                  >
+                    <span className={`h-2 w-2 rounded-full transition-all ${isActive ? 'bg-gps-orange' : 'bg-gray-300 group-hover:bg-gps-orange'}`} />
+                    <span className="min-w-0">{link.name}</span>
+                  </Link>
+                );
+              })}
+            </nav>
             <a
               href="https://wa.me/233540645292"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gps-orange text-white px-12 py-5 text-lg font-black uppercase tracking-widest shadow-xl active:scale-95 transition-transform"
+              className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-gps-orange px-5 text-sm font-black uppercase tracking-[0.16em] text-white shadow-lg shadow-gps-orange/20 transition-transform active:scale-95"
             >
-              WhatsApp Us
+              <MessageCircle size={18} />
+              <span>WhatsApp Us</span>
             </a>
           </div>
         </div>
